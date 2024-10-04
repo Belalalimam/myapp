@@ -9,6 +9,19 @@ export const addToCart = (plant) => ({
     type: 'INCREASE_QUANTITY',
     payload: plantId,
   });
+
+  // Define decreaseQuantity:
+  export const decreaseQuantity = (plantId) => ({
+    type: 'DECREASE_QUANTITY',
+    payload: plantId,
+  });
+
+  // Define removeFromCart:
+  export const removeFromCart = (plantId) => ({
+    type: 'REMOVE_FROM_CART',
+    payload: plantId,
+  });
+  
   
   // Similar actions for decreaseQuantity and removeFromCart
   
